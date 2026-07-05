@@ -13,6 +13,8 @@ class DiagnosticIssue(BaseModel):
     description: str
     symptoms: List[str]
     solution: str
+    follow_up_questions: List[str] = Field(default_factory=list)
+    confidence: float = Field(default=0.0, ge=0.0, le=1.0)
 
 
 class DiagnosticResult(BaseModel):

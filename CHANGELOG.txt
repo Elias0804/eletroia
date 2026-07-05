@@ -1,0 +1,40 @@
+ELETROIA - RESUMO DO APLICATIVO
+=============================
+
+Visão geral:
+EletroIA é uma plataforma brasileira voltada para assistência técnica inteligente de eletrodomésticos, com foco em diagnóstico assistido por IA, conexão entre clientes, técnicos, empresas e especialistas técnicos.
+
+Objetivo do projeto:
+- Oferecer diagnóstico inicial automatizado para problemas de aparelhos.
+- Criar uma base escalável para futuras funcionalidades como autenticação, cadastro de usuários, painel administrativo, marketplace de peças, chat, pagamentos e área premium.
+
+Arquitetura atual:
+- Frontend: Next.js + React + TypeScript + Tailwind CSS.
+- Backend: Python + FastAPI.
+- Banco: PostgreSQL (planejado/estruturado para evolução).
+- Autenticação: JWT (planejado para implementação futura).
+- Containerização: Docker.
+
+Funcionalidades implementadas até o momento:
+- Página inicial com formulário de diagnóstico.
+- Integração entre frontend e backend para envio de sintomas.
+- API REST para análise de diagnóstico.
+- Lógica de diagnóstico com recomendações, perguntas de acompanhamento e nível de confiança.
+- Testes automatizados para o serviço de diagnóstico.
+
+Estrutura principal:
+- backend/: aplicação FastAPI, rotas, serviços, schemas e configuração.
+- frontend/: aplicação Next.js para interface do usuário.
+- docs/: documentação do projeto.
+- database/: estrutura para persistência de dados.
+- docker/: arquivos de containerização.
+- scripts/: scripts auxiliares.
+
+Próximos passos sugeridos:
+- Implementar autenticação e cadastro de usuários.
+- Criar módulos para clientes, técnicos e empresas.
+- Expandir o motor de diagnóstico com IA e conhecimento técnico mais avançado.
+- Preparar a base para SEO, páginas de marca/modelo/defeito/cidade e futuras integrações.
+
+Histórico de mudanças:
+- 2026-07-02: criado arquivo de resumo e registro de mudanças do projeto.
