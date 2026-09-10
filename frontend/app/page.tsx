@@ -1,6 +1,8 @@
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
 import Hero from "@/components/home/Hero";
+import SearchBar from "@/components/home/SearchBar";
+import Categories from "@/components/home/Categories";
 
 export default function Home() {
   return (
@@ -8,6 +10,10 @@ export default function Home() {
     <Navbar />
 
     <main className="min-h-screen bg-slate-100">
+      <Hero />
+      <SearchBar /> 
+      <Categories/>
+
       <section className="mx-auto flex min-h-screen max-w-6xl flex-col items-center justify-center px-6 text-center">
 
         <h1 className="text-6xl font-extrabold text-blue-700">
@@ -23,7 +29,7 @@ export default function Home() {
         </button>
 
       </section>
-      <Hero />
+      
     </main>
     <Footer />
   </>
