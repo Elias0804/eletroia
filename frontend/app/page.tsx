@@ -3,34 +3,27 @@ import Footer from "@/components/layout/Footer";
 import Hero from "@/components/home/Hero";
 import SearchBar from "@/components/home/SearchBar";
 import Categories from "@/components/home/Categories";
+import HowItWorks from "@/components/home/HowItWorks";
+import Benefits from "@/components/home/Benefits";
+import TechnicianSection from "@/components/home/TechnicianSection";
+import CallToAction from "@/components/home/CallToAction";
 
 export default function Home() {
   return (
-  <>
-    <Navbar />
+    <>
+      <Navbar />
 
-    <main className="min-h-screen bg-slate-100">
-      <Hero />
-      <SearchBar /> 
-      <Categories/>
+      <main className="min-h-screen bg-slate-100">
+        <Hero />
+        <SearchBar />
+        <Categories />
+        <HowItWorks />
+        <Benefits />
+        <TechnicianSection />
+        <CallToAction />
+      </main>
 
-      <section className="mx-auto flex min-h-screen max-w-6xl flex-col items-center justify-center px-6 text-center">
-
-        <h1 className="text-6xl font-extrabold text-blue-700">
-          EletroIA
-        </h1>
-
-        <p className="mt-6 max-w-2xl text-xl text-gray-600">
-          A maior plataforma brasileira de assistência técnica inteligente para eletrodomésticos.
-        </p>
-
-        <button className="mt-10 rounded-xl bg-blue-700 px-8 py-4 text-lg font-semibold text-white transition hover:bg-blue-800">
-          Iniciar Diagnóstico
-        </button>
-
-      </section>
-      
-    </main>
-    <Footer />
-  </>
-)}
+      <Footer />
+    </>
+  );
+}
